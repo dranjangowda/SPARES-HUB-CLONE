@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+
+    <div id="nav_bar">
+
+    </div>
+    <div id="addresscontainer">
+        <div class="step-progressbar">
+          <ul class="addressul">
+            <li class="addressli">Login Details</li>
+            <li class="active addressli">Delivery Address</li>
+            <li class="addressli">Payment Method</li>
+          </ul>
+        </div>
+        <div class="leftdiv">
+          <p class="select">Select a delivery address</p>
+          <div class="address">
+            <div class="details">
+              <span class="font16">SO DA JAGADISH</span>
+              <p class="font14">
+                <span>KANCHINAKAL DURGAALDUR</span><br />
+                <span>Chickmagalur</span><br />
+                <span>Karnataka-577101</span><br />
+                <span>6363076297</span>
+              </p>
+              <button onclick="redirectToPayment()" class="deliver">
+                Deliver to this Address
+              </button>
+            </div>
+            <p class="edit">Edit</p>
+            <p class="delete">Delete</p>
+          </div>
+          <p class="addnew"><span class="dot">+</span> ADD NEW ADDRESS</p>
+        </div>
+        <div class="rightdiv">
+          <div class="needhelp">
+            <p>Need Help? 92233 00222</p>
+          </div>
+          <div class="login">
+            <p class="mail">
+              <span class="bold"> Login Details</span><br />dranjangowda@gmail.com
+            </p>
+            <p class="change">CHANGE</p>
+          </div>
+          <hr />
+          <div class="showitem bold">
+            <p id="itemCount">Show Items in Order ()</p>
+          </div>
+          <hr />
+          <div class="priceDetails bold">
+            <p>Price Details</p>
+          </div>
+          <div class="total_mrp">
+            <div class="t_mrp">Total MRP:</div>
+            <div class="t_price" id="t_price">₹0</div>
+          </div>
+          <div class="savings_on_mrp">
+            <div class="s_mrp">Savings on MRP:</div>
+            <div class="s_price pink" id="s_price">-₹0</div>
+          </div>
+          <div class="sub_total">
+            <div class="sub_mrp">Subtotal:</div>
+            <div class="sub_price" id="sub_price">₹0</div>
+          </div>
+          <div class="shipping_charges">
+            <div class="shipping">Shipping charges:</div>
+            <div class="shipping_price" id="shipping_price">₹0</div>
+          </div>
+          <hr />
+          <div class="order_total">
+            <h3 class="o_total_mrp">Order total:</h3>
+            <h3 class="o_total_price" id="o_total_price">₹0</h3>
+          </div>
+          <div class="you_save">
+            <div class="save">You Save:</div>
+            <div class="save_price pink" id="save_price">₹0</div>
+          </div>
+        </div>
+      </div>
+      <div id="foo_ter">
+
+    </div>
+    <script type="module">
+        import navBar from "../component/navbar.js"
+        let nav_bar = document.getElementById("nav_bar")
+        nav_bar.innerHTML = navBar()
+        import footer from "../component/footer.js"
+        let foo_ter = document.getElementById('foo_ter')
+        foo_ter.innerHTML = footer()
+    </script>
+    <script src="../script/address.js"></script>
+</body>
+</html>

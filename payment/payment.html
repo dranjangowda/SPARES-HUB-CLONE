@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <script
+    src="https://kit.fontawesome.com/7fe5a042ed.js"
+    crossorigin="anonymous"
+  ></script>
+  <style>
+
+  </style>
+</head>
+<body>
+
+    <div id="nav_bar">
+
+    </div>
+   
+    <div class="paymentContainer">
+        <div class="paypal">
+                <p class="highlight">Pay with my paypal account</p>
+                <hr class="bottomLine">
+                <img src="https://www.paypalobjects.com/en_US/i/btn/btn_PaywithPP_25h.gif" alt="">
+        </div>
+        <div class="cardPayment">
+                <p class="highlight">Pay with my Debit Or Credit Card</p>
+                <hr class="bottomLine">
+                <div class="cardDetails">
+                    <label for="" class="highlight">Card type</label>
+                <select name="" id="">
+                    <option value="">Master Card</option>
+                    <option value=""></option>
+                </select>
+                <label for="" class="highlight">Card Number</label>
+                <input type="text" placeholder="Enter Card Number">
+                <label for=""class="highlight" >Expiry Date</label>
+                <input type="date" placeholder="mm/yy">
+                <label for=""class="highlight" >csc</label>
+                <input type="text" placeholder="csc">
+                <button onclick="thankyoupage()">PayNow</button>
+                </div>
+        </div>
+    </div>
+    <div id="foo_ter">
+
+    </div>
+    <script type="module">
+        import navBar from "../component/navbar.js"
+        let nav_bar = document.getElementById("nav_bar")
+        nav_bar.innerHTML = navBar()
+        import footer from "../component/footer.js"
+        let foo_ter = document.getElementById('foo_ter')
+        foo_ter.innerHTML = footer()
+
+    </script>
+ <script>
+        function thankyoupage(){
+    window.location.href = "../thankyou/thankyou.html"
+}</script>
+</body>
+</html>

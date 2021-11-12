@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/style.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="signup.css">
+  </head>
+</head>
+<body>
+    <div id="nav_bar">
+
+    </div>
+    <h2 class="signupPageHeading">Create New Customer Account</h2>
+    <div id="parent">
+    <div id="container">
+            <div class="signup">
+            <h2>SignUp/Create Account</h2>
+            </div>
+            <form onsubmit="signUp()">
+            <div id="inputfield">
+                <input type="number"id="mobile" placeholder="Enter Your Mobile No.">
+                <input type="text" id="mail" placeholder="Enter your mail Id">
+                <input type="password" id="password"  placeholder="Enter your password">
+            </div>
+            <input type="submit" class="fwb" value="&#8594;"/>
+                    
+                </form>
+                
+           <p class="login">Already have an account? click here to <a href="../login/login.html">login</a></p> 
+            <div class="connectwith">Or connect with</div>
+            <div class="social" id="fcb">
+                <img src="https://media6.ppl-media.com/mediafiles/ecomm/misc/1542974744_fb-logo.png">
+                FACEBOOK
+            </div>
+            <div class="social" id="gogl">
+                <img src="https://media6.ppl-media.com/mediafiles/ecomm/misc/1542974745_google-logo.png">
+                GOOGLE
+            </div>
+        </form>
+    </div>
+    </div>
+   <div id="foo_ter">
+
+   </div>
+</body>
+<script type="module">
+    import navBar from "../component/navbar.js"
+    let nav_bar = document.getElementById("nav_bar")
+    nav_bar.innerHTML = navBar()
+    import footer from "../component/footer.js"
+    let foo_ter = document.getElementById('foo_ter')
+    foo_ter.innerHTML = footer()
+</script>
+<script src="../script/signup.js"></script>
+</html>

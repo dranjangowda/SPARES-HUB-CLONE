@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <script
+    src="https://kit.fontawesome.com/7fe5a042ed.js"
+    crossorigin="anonymous"
+  ></script>
+</head>
+<body>
+
+    <div id="nav_bar">
+
+    </div>
+    <div class="filavBottom">
+        <ul class="filavBottom_links">
+          <div class="fildropdown fildddForRemoveLeftLine">
+          <div class="fildropLink">
+            <li><a href=""> Brands <i class="fas fa-sort-down"></i></i></a></li> 
+          </div>
+            <div class="fildropdown-content ">
+              <div class="filproducts-menu-dropDown">
+                   <ul class="filproducts-menu-dropDown-links">
+                      <li onclick="brandDisplay1()"><a>AUDI</a></li>
+                     <li onclick="brandDisplay2()"><a>BMW</a></li>
+                     <li onclick="brandDisplay3()"><a >CHEVROLET</a></li>
+                     <li onclick="brandDisplay4()"><a >HONDA</a></li>
+                   </ul>
+                 </div>
+              </div>
+          </div>
+          
+          <div class="fildropdown">
+            <div class="fildropLink">
+              <li><a href="">Price Range  <i class="fas fa-sort-down"></i></a></li>
+            </div>
+            <div class="fildropdown-content ">
+              <div class="filproducts-menu-dropDown ">
+                   <ul class="filproducts-menu-dropDown-links">
+                   <li onclick="priceRange()"><a>1RS - 1000RS</a></li>
+                    <li onclick="priceRange1()"><a>1000RS - 5000RS</a></li>
+                    <li onclick="priceRange2()"><a>5000rs & above</a></li>
+                   </ul>
+                 </div>
+              </div>
+          </div>     
+          <div class="fildropdown">
+           <div class="fildropLink">
+            <li><a href="">Sort By Relevance  <i class="fas fa-sort-down"></i></a></li> 
+           </div>
+            <div class="fildropdown-content ">
+              <div class="filproducts-menu-dropDown ">
+                   <ul class="filproducts-menu-dropDown-links">
+                  <li onclick="sortHIghTOLow()"><a>High to low</a></li>
+                   <li  onclick="sortLowTOHigh()"><a>low to high</a></li>
+                   </ul>
+                 </div>
+              </div>
+          </div>
+        </ul>
+      </div>
+    <h1 class="productHeading">ALL PRODUCT</h1>
+    <div id="product_div">
+
+    </div>
+    <div id="foo_ter">
+
+    </div>
+    <script type="module">
+        import navBar from "../component/navbar.js"
+        let nav_bar = document.getElementById("nav_bar")
+        nav_bar.innerHTML = navBar()
+        import footer from "../component/footer.js"
+        let foo_ter = document.getElementById('foo_ter')
+        foo_ter.innerHTML = footer()
+    </script>
+    <script src="../script/product..js"></script>
+</body>
+</html>

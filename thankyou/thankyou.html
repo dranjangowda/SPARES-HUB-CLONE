@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+
+    <div id="nav_bar">
+
+    </div>
+    <div id="thankyou-container">
+        <div class="thankyou">
+          <div class="dot">
+            <span class="symbol">&#10003;</span>
+          </div>
+          <div class="para">
+            <p>
+              <span class="bold"> Thank You SO DA JAGADISH !</span><br />Your
+              Order (Order Id 20210717255156) has been placed successfully.
+            </p>
+          </div>
+        </div>
+  
+        <div class="communication">
+          <!-- <span><i class='far fa-envelope-open' style='font-size:50px'>&#xf2b6;</i></span> -->
+          <p>
+            You will shortly receive an order verification E-mail & SMS confirming
+            your order details.
+          </p>
+        </div>
+        <div id="order-summary-container">
+          <div class="details">
+            <span class="head">SHIPPING DETAILS</span>
+            <p class="font14">
+              <span>SO DA JAGADISH</span><br />
+              <span>KANCHINAKAL DURGAALDUR</span><br />
+              <span>Chickmagalur</span><br />
+              <span>Karnataka-577101</span><br />
+              <span>6363076297</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <button onclick="homePage()" class="continue">CONTINUE</button>
+    <div id="foo_ter">
+
+    </div>
+    <script type="module">
+        import navBar from "../component/navbar.js"
+        let nav_bar = document.getElementById("nav_bar")
+        nav_bar.innerHTML = navBar()
+        import footer from "../component/footer.js"
+        let foo_ter = document.getElementById('foo_ter')
+        foo_ter.innerHTML = footer()
+    </script>
+    <script>
+         function homePage() {
+    window.location.href = "../index/index.html";
+  }
+    </script>
+</body>
+</html>
